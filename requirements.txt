@@ -1,0 +1,18 @@
+# AI Libraies
+langchain
+langchain-openai
+langchain-core
+
+# FastAPI
+fastapi
+uvicorn
+
+# SQL Libraries
+sqlalchemy
+pymysql
+
+# ENV Libraries
+python-dotenv
+
+# Other Libraries
+cryptography
