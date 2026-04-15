@@ -3,6 +3,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from src.models.flashcard_models import FlashcardSchema
 from dotenv import load_dotenv
 
+load_dotenv()
 model = init_chat_model(model='gpt-4o')
 prompt = ChatPromptTemplate([
     ('system', 'You generate Q&A flashcards from text. Create ONE flashcard with question, answer, tag, and difficulty (Easy/Medium/Hard).'),

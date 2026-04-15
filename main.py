@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Response, status
 from fastapi.middleware.cors import CORSMiddleware
 from src.routes.flashcard_routes import router as flashcard_router
 from src.config.db import Base, engine
@@ -18,4 +18,4 @@ app.include_router(flashcard_router)
 
 @app.get("/health")
 async def health_check():
-    return {"status": 200}
+    return Response(status_code=status.HTTP_200_OK)
